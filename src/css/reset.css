@@ -1,0 +1,21 @@
+/*Com css trabalhamos com seletores
+
+seletor{
+    propriedades
+}
+
+seletores podem ser de tags ou classes, e
+o uso de * indica que todas as tags
+vão serem modificadas pela propriedades comum
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*Essa propriedade vai ajudar a medir largura*/
+}
+
+ul{
+    list-style: none;
+}

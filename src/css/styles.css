@@ -1,0 +1,136 @@
+@import url("animation.css");
+
+body{
+    /*Alterando a font importada do google fonts*/
+    font-family: "Oxanium", cursive;
+    background-color: rgb(59, 10, 78);
+    color: white;
+}
+
+/*Criar um elemento  (piceld elemento) fake, cria um elemento html  no css*/
+/*Antes (before) do body vai ser criado o elemento*/
+body::before{
+    content: "";
+    background-image: url(../img/tema-titulo/akira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(40%);
+    width: 100%;
+    height: 100%;
+    position: absolute; /*Posicionamento absoluto, cria uma camada de folhas*/
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+header.cabecalho{
+    /*No felx é uma propriedade para modificar os filhos apartir do pai*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header.cabecalho img.logo{
+    filter: contrast(150%);
+    filter: saturate(150%);
+}
+
+main.selecao-personagens{
+    display: flex;
+    background-color: rgba(55, 20, 87, 0.164);
+    align-items: center;
+    justify-content: space-around;
+    /*A medida de vh é em base da tela do navegador, com sua altura.
+    Com  o -152px é em base da altura maxima definida em relação ao  elemento*/
+    /*min-height: calc(100vh - 200px);*/ /*Função calc para realizar calculos e retornar um resultado*/
+}
+
+main.selecao-personagens 
+section.personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    max-height: 100%;
+    gap: 20px;
+}
+
+main.selecao-personagens 
+section.personagens 
+ul.lista-personagem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+main.selecao-personagens 
+section.personagens 
+h1.titulo{
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%; /*Quando for utilizar a porcentagem, precisa-se basear no pai*/
+    text-align: center;
+}
+
+/*Colocar ponto (.) ao esterizar o elemento, indica que está usando duas ou mais classes*/
+ul.lista-personagem .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px blue;
+}
+
+main.selecao-personagens 
+section.personagem-selecionado{
+    text-align: center;
+    max-height: 410px;
+}
+
+main.selecao-personagens 
+section.personagem-selecionado 
+div.informacoes-personagem 
+h2.nome-personagem{
+    border-bottom: 3px solid rgb(0, 255, 234);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+main.selecao-personagens 
+section.personagem-selecionado 
+div.informacoes-personagem 
+p.descricao-personagem{
+    font-size: 15px;
+    line-height: 25px; /*Altura da linha*/
+    text-align: center;
+    margin-top: 15px;
+    width: 540px;
+}
+
+main.selecao-personagens 
+section.personagens 
+ul.lista-personagem 
+li.personagem {
+    border-radius: 15px;
+    max-width: 7em;
+    max-height: 7em;
+}
+
+/*Imagens*/
+main.selecao-personagens 
+section.personagens 
+ul.lista-personagem 
+li.personagem 
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+main.selecao-personagens 
+section.personagem-selecionado 
+img.personagem-caracteristica{
+    width: 14em;
+    height: 14em;
+    border-radius: 25%;
+    animation: moveCima 1.5s infinite ease-in-out;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/icon-page/THO.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title>The Owl House</title>
+</head>
+<!--Crie um arquivo html com o nome "index", para o servidor encontrar esse arquivo como sendo o  principal-->
+
+<body >
+    <!--Atributo class das tags para definir classes (semelhaças de propriedades)-->
+    <header class="cabecalho">
+        <img class="logo" src="./src/img/tema-titulo/logo.png" alt="logo">
+    </header>
+    <main class="selecao-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+            <ul class="lista-personagem">
+                <!--Usa a tag li para o item da lista (ul ou ol)-->
+                <li class="personagem selecionado" id="amity" data-name="Amity" data-description="Amity Blight é uma habitante de 14 anos das Ilhas Boiling, um arquipélago localizado no Reino do Demônio. Um ser que se tornou gradioso e carinhoso com seus amigos. Poderosa com sua magia e habilidade, além de sua inteligência.">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-amity.jpg" alt="Amity">
+                </li>
+                <li class="personagem" id="belos" data-name="Belos" data-description="O Imperador das Ilhas Ferventes , implementador e superintendente do Sistema Coven, e Mensageiro Humilde do Titã que trouxe ordem e controle ao Reino Demoníaco após as cinzas da chamada Era Selvagem - ou assim ele afirma ">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-belos.jpg" alt="Belos">
+                </li>
+                <li class="personagem" id="collector" data-name="Collector" data-description="O Colecionador é uma figura enigmática com raízes vagas e obscuras na história do Reino Demoníaco. Ele já foi derrotado por um poderoso Titã e aprisionado no espaço entre os Reinos Humano e Demoníaco.">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-collector.jpg" alt="Collector">
+                </li>
+                <li class="personagem" id="edalyn" data-name="Edalyn" data-description="A bruxa selvagem mais poderosa das Ilhas Boiling até que sua maldição acabou incapacitando totalmente sua habilidade mágica. Tem uma maldição que faz com que ela se transforme na besta coruja">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-edalyn.jpg" alt="Edalyn">
+                </li>
+                <li class="personagem" id="gus" data-name="Gus" data-description="Bastante otimista, leal e tem uma personalidade divertida. Ele é um aprendiz de bruxo e frequentemente acompanha Luz e Eda em suas aventuras. Gus é conhecido por sua devoção à magia e por sua capacidade de se transformar em várias formas.">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-gus.jpg" alt="Gus">
+                </li>
+                <li class="personagem" id="hunter" data-name="Hunter" data-description="Sob a capa está uma túnica dourada com mangas mais escuras, legging preta e usa luvas marrons e botas de cano alto. Pelo menos como era antes! Uma mundaça drástica ocorreu depois de alguns tempos conhecendo a verdade sob o imperador.">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-hunter.jpg" alt="Hunter">
+                </li>
+                <li class="personagem" id="king" data-name="King" data-description="É uma pequena criatura de 8 anos com uma cabeça de caveira e colega de quarto de Eda que é o autoproclamado Rei dos Demônios. Embora não se saiba se ele realmente é o Rei dos Demônios, ele certamente mantém uma atitude excessivamente confiante e dominadora">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-king.jpg" alt="King">
+                </li>
+                <li class="personagem" id="luz" data-name="Luz" data-description="Luz Noceda, uma garota de 14 anos que aspira ser uma bruxa, embora não tenha muitas habilidades para isso. Vindo do mundo dos humano para as Ilhas Boiling. Lindado com diversos desafios">
+                    <!--O ./ no src  do img indica acessar a raiz do projeto-->
+                    <img src="./src/img/icons/icon-luz.jpg" alt="Luz Nocenda">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-caracteristica" src="./src/img/amity.jpg" alt="Personagem selecionado">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Amity</h2>
+                <p class="descricao-personagem" id="descricao-personagem">
+                    Amity Blight é uma habitante de 14 anos das Ilhas Boiling, um arquipélago localizado no Reino do
+                    Demônio.
+                    Um ser que se tornou gradioso e carinhoso com seus amigos. Poderosa com sua magia e habilidade, além
+                    de sua inteligência.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

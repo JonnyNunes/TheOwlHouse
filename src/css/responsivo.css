@@ -1,0 +1,73 @@
+@media (max-width: 1140px) {
+
+    body::before{
+        background-image: url(../img/tema-titulo/owl_house.jpg);
+    }
+
+    header.cabecalho{
+        max-height: 110px;
+        margin-bottom: 20px;
+    }
+
+    header.cabecalho img.logo{
+        max-width: 110px;
+    }
+
+    main.selecao-personagens {
+        flex-direction: column-reverse;
+        max-width: 420px;
+        margin: 0px auto;
+    }
+
+    main.selecao-personagens 
+    section.personagem-selecionado{
+        max-width: 100%;
+    }   
+
+    main.selecao-personagens 
+    section.personagens 
+    ul.lista-personagem{
+        gap: 9px;
+    }
+
+    main.selecao-personagens 
+    section.personagem-selecionado 
+    div.informacoes-personagem 
+    h2.nome-personagem{
+        display: inline-block;
+        font-size: 14px;
+        width: 90%;
+    }
+
+    main.selecao-personagens 
+    section.personagens 
+    h1.titulo{
+        font-size: 13px;
+        width: 90%;
+    }
+
+    main.selecao-personagens 
+    section.personagem-selecionado 
+    div.informacoes-personagem 
+    p.descricao-personagem{
+        font-size: 11px;
+        margin: 15px auto;
+        line-height: 18px;
+        max-width: 85%;
+    }
+
+    main.selecao-personagens 
+    section.personagem-selecionado 
+    img.personagem-caracteristica{
+        width: 6em;
+        height: 6em;
+    }
+
+    main.selecao-personagens 
+    section.personagens 
+    ul.lista-personagem 
+    li.personagem {
+        width: 5em;
+        height: 5em;
+    }
+}
